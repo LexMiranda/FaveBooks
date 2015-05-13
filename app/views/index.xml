@@ -1,0 +1,20 @@
+<Alloy>
+	<Collection src="books" />
+	<Window>
+		<TableView dataCollection="books">
+			<TableViewRow title="{titulo}" author="{autor}" onClick="showBook"> </TableViewRow>
+		</TableView>
+		<Menu id="menu" platform="android">
+			<MenuItem id="addBook"
+				title="Add book"
+				onClick="addBook"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+			<MenuItem id="addJanela"
+				title="Add Janela"
+				onClick="addJanela"
+				showAsAction="Ti.Android.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW" />
+				
+				
+		</Menu>
+	</Window>
+</Alloy>
